@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A365" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6MH-c7-hZj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Weather View Controller-->
+        <scene sceneID="Z45-h7-Vdn">
+            <objects>
+                <viewController id="6MH-c7-hZj" customClass="WeatherViewController" customModule="WeatherForecast" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T8B-tP-hf2"/>
+                        <viewControllerLayoutGuide type="bottom" id="q3z-D0-iBK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aPC-eh-M9X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="v2g-9Z-49h">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="41" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MM9-dN-qEa">
+                                <rect key="frame" x="143.5" y="277.5" width="88" height="112.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="94"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vsl-0L-FfS">
+                                <rect key="frame" x="147" y="398" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New York" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lex-oy-7dZ">
+                                <rect key="frame" x="149" y="249" width="77.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Z3p-uU-aYI">
+                                <rect key="frame" x="170.5" y="70" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="e2D-zc-7Wd"/>
+                                    <constraint firstAttribute="height" constant="32" id="ssY-AR-O9H"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="8ll-If-46E">
+                                <rect key="frame" x="177.3243386790889" y="323.88044916797162" width="20" height="19.999999999999886"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Vsl-0L-FfS" firstAttribute="top" secondItem="MM9-dN-qEa" secondAttribute="bottom" constant="8" id="3WK-mf-o0r"/>
+                            <constraint firstItem="Vsl-0L-FfS" firstAttribute="centerX" secondItem="MM9-dN-qEa" secondAttribute="centerX" id="6rs-Zf-w9E"/>
+                            <constraint firstItem="v2g-9Z-49h" firstAttribute="top" secondItem="Z3p-uU-aYI" secondAttribute="bottom" constant="-102" id="FdQ-0E-CQQ"/>
+                            <constraint firstItem="MM9-dN-qEa" firstAttribute="centerX" secondItem="v2g-9Z-49h" secondAttribute="centerX" id="Nxt-nc-PLF"/>
+                            <constraint firstItem="v2g-9Z-49h" firstAttribute="leading" secondItem="aPC-eh-M9X" secondAttribute="leading" id="OJ1-7i-QXD"/>
+                            <constraint firstItem="MM9-dN-qEa" firstAttribute="centerY" secondItem="v2g-9Z-49h" secondAttribute="centerY" id="QpL-CD-rR9"/>
+                            <constraint firstItem="Z3p-uU-aYI" firstAttribute="centerX" secondItem="v2g-9Z-49h" secondAttribute="centerX" constant="-1.0994894630464671" id="Zvv-h9-2V5"/>
+                            <constraint firstItem="q3z-D0-iBK" firstAttribute="top" secondItem="v2g-9Z-49h" secondAttribute="bottom" id="aEj-f4-yDW"/>
+                            <constraint firstItem="MM9-dN-qEa" firstAttribute="top" secondItem="Lex-oy-7dZ" secondAttribute="bottom" constant="8" id="nlw-uY-Hs5"/>
+                            <constraint firstItem="v2g-9Z-49h" firstAttribute="top" secondItem="aPC-eh-M9X" secondAttribute="top" id="tea-eG-W5m"/>
+                            <constraint firstItem="Lex-oy-7dZ" firstAttribute="centerX" secondItem="MM9-dN-qEa" secondAttribute="centerX" id="vFf-jb-qgQ"/>
+                            <constraint firstAttribute="trailing" secondItem="v2g-9Z-49h" secondAttribute="trailing" id="vOT-Yv-F3H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="indicatorWeather" destination="8ll-If-46E" id="VQT-Sn-mos"/>
+                        <outlet property="labelLocation" destination="Lex-oy-7dZ" id="4ZF-hE-xXW"/>
+                        <outlet property="labelNumberWeather" destination="MM9-dN-qEa" id="kAf-P1-ykY"/>
+                        <outlet property="labelSatuan" destination="Vsl-0L-FfS" id="YbH-rU-dRO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Myr-hd-sW6" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-817" y="-225"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="1600" height="1067"/>
+        <image name="logo" width="210" height="237"/>
+    </resources>
+</document>
